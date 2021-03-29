@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/QrError.css">
+</head>
+<body>
+<div class="Main">
+    <div class="Logo">
+
+    </div>
+    <div class="Question Block">
+        <div class="Question_Text">
+            Ошибка
+        </div>
+        <div class="Question_Text">
+            Данный QR уже использовался ранее или произошла ошибка.
+            Попробуйте другой талон!
+        </div>
+        <div class="ButtonMenu">
+            <div class="Back_To_Previous_Question_Button">
+                <a href="index.html">Попробовать другой талон</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    async function Checker(number) {
+        if (number==1)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart'
+            document.getElementsByClassName('Heart').item(2).className='Heart'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==2)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==3)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==4)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==5)
+        {
+
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(4).className='Heart HeartChecked'
+        }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        console.log("Hello");
+        sleep(1000).then(() => {document.location.href = "http://localhost:63342/verstka/html/Question.html"; });
+    }
+</script>

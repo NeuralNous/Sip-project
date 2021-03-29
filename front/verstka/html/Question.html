@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../css/Question.css">
+</head>
+<body>
+<div class="Main">
+    <div class="Logo">
+
+    </div>
+    <div class="Question Block">
+        <div class="Question_Text">
+            Оцените качество
+            обслуживания
+            учреждения
+        </div>
+        <div class="Question_Answers">
+            <div class="HeartBlock">
+                <div onclick="Checker(1)" class="Heart">
+
+                </div>
+                <div onclick="Checker(2)" class="Heart">
+
+                </div>
+                <div onclick="Checker(3)" class="Heart">
+
+                </div>
+                <div onclick="Checker(4)" class="Heart">
+
+                </div>
+                <div onclick="Checker(5)" class="Heart">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+<script>
+    async function Checker(number) {
+        if (number==1)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart'
+            document.getElementsByClassName('Heart').item(2).className='Heart'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==2)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==3)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==4)
+        {
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(4).className='Heart'
+        }
+        else if(number==5)
+        {
+
+            document.getElementsByClassName('Heart').item(0).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(1).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(2).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(3).className='Heart HeartChecked'
+            document.getElementsByClassName('Heart').item(4).className='Heart HeartChecked'
+        }
+        function sleep(ms) {
+            return new Promise(resolve => setTimeout(resolve, ms));
+        }
+
+        console.log("Hello");
+        sleep(1000).then(() => {document.location.href = "Question2.html"; });
+
+    }
+</script>

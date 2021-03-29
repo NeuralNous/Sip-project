@@ -1,0 +1,102 @@
+.Logo
+{
+    background: url("../img/MIREA_Gerb_Colour.png");
+    width: 436px;
+    height: 482px;
+    transform: scale(0.75);
+    margin-left: 28%;
+}
+.Main
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #226B94 0%, #4C86BC 100%), #467DE4;
+}
+.Heart
+{
+    background: url("../img/UnCheckedHeart.svg");
+    width: 56px;
+    height: 52px;
+    background-repeat: no-repeat;
+}
+.Question_Text
+{
+    width: 650px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 70px;
+    line-height: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #F2F4F9;
+    margin-left: 170px;
+    margin-top: 100px;
+}
+.Question_Text:first-child
+{
+    margin-left: 350px;
+}
+.HeartBlock
+{
+    margin-top: 100px;
+    margin-left: 175px;
+    width: 650px;
+    height: 100px;
+}
+.Heart
+{
+    transition: all 1s ease-out;
+    margin-left: 60px;
+    display: inline-block;
+    transform: scale(2);
+}
+.HeartChecked
+{
+    background-image: url("../img/CheckedHeart.svg");
+}
+.ButtonMenu
+{
+    margin-top: 150px;
+    margin-left: 150px;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 54px;
+    line-height: 61px;
+    /* identical to box height */
+
+    color: #F2F4F9;
+}
+.Back_To_Previous_Question_Button
+{
+    text-align: center;
+    padding: 20px;
+    width: 700px;
+    border: 3px solid #C4C4C4;
+    box-sizing: border-box;
+    border-radius: 10px;
+}
+a
+{
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: none;
+    color: white;
+}
+a:active
+{
+    text-decoration: none;
+    color: white;
+}
+a:visited
+{
+    text-decoration: none;
+    color: white;
+}
